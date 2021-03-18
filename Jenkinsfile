@@ -35,9 +35,6 @@ pipeline {
          } 
          stage('Deploy to OKE') {
          /* Deploy the image to OKE*/
-/*
-/* 
-/*
         steps {
             /*sh "'sudo cp /var/lib/jenkins/workspace/deploy.sh /var/lib/jenkins/workspace/jenkins-oci_master'"*/
             sh 'sh ../../hello-deploy.sh'
