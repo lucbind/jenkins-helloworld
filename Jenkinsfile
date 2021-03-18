@@ -27,7 +27,7 @@ pipeline {
          /* Final stage of build; Push the 
             docker image to our OCI private Registry*/
         steps {
-            sh "sudo docker login -u 'emeaseitalysandbox/oracleidentitycloud/luca.bindi@oracle.com' --password-stdin 'UXI#0AXK<Xub2]lgw-6u' eu-frankfurt-1"
+            sh "sudo docker login -u 'emeaseitalysandbox/oracleidentitycloud/luca.bindi@oracle.com' -p 'uASDz34:E0c)4i0uh{m]' eu-frankfurt-1"
             sh "sudo docker tag customapp:1 eu-frankfurt-1/emeaseitalysandbox/customapp:custom"
             sh 'sudo docker push eu-frankfurt-1/emeaseitalysandbox/customapp:custom'
             
