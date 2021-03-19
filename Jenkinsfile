@@ -7,7 +7,7 @@ pipeline {
             //  git config --global credential.username lucabind
             //  git config --global credential.helper "Oneiros!973"
               git url: 'https://github.com/lucbind/wine_demo.git'
-
+//
           }  
     }   
         stage('Build docker image') {
